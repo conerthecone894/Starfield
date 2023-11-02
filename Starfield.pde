@@ -23,7 +23,7 @@ class Particle{ // the big guys you see
   void show(){
     noStroke();
     fill(clr[(int)(Math.random()*6)], opacity);
-    circle((float)myX, (float)myY, mySize);
+    ellipse((int)myX, (int)myY, mySize, mySize);
   }
   
   void boom(){
