@@ -65,7 +65,7 @@ class smallParticle extends Particle{ //the little guys you see
   void show(){
     noStroke();
     fill(myClr[(int)(Math.random()*6)], opacity);
-    circle((float)myX, (float)myY, mySize);
+    ellipse((float)myX, (float)myY, mySize, mySize);
   }
 }
 
