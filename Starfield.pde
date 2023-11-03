@@ -23,7 +23,7 @@ class Particle{ // the big guys you see
   void show(){
     noStroke();
     fill(clr[(int)(Math.random()*6)], opacity);
-    ellipse((int)myX, (int)myY, mySize, mySize);
+    ellipse((float)myX, (float)myY, mySize, mySize);
   }
   
   void boom(){
@@ -65,7 +65,7 @@ class smallParticle extends Particle{ //the little guys you see
   void show(){
     noStroke();
     fill(myClr[(int)(Math.random()*6)], opacity);
-    ellipse((float)myX, (float)myY, mySize, mySize);
+    ellipse((int)myX, (int)myY, mySize, mySize);
   }
 }
 
